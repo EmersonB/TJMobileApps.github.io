@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="text/javascript" src="javascript/jquery-1.3.2.min.js"></script>
+
+	<title>Mobile Apps</title>
+	<style>
+	.container{
+		background-color: rgba(0, 0, 0, 0.3);	
+		width: 100%;
+	}
+		body{
+			margin:0;
+			font-size: 20px;
+		}
+		.element{
+			padding-top: 6%;
+			shape-outside: url(images/swift.png);
+			shape-image-threshold: 0.5;
+			float:left;
+			width:15%;
+		}
+		.element2{
+			padding-top: 6%;
+			shape-outside: url(images/android.jpg);
+			shape-image-threshold: 0.5;
+			float:right ;
+			width:15%;
+
+
+		}
+		.about{
+			padding-top : 5%;
+			height: 300px;
+
+		}
+		.normal{
+			margin:0;
+			padding:0;
+			color: rgba(0,0,0,.8); 
+			background-color: rgba(0, 0, 0, 0.3);
+			height: 600px;
+			
+		}
+		.normal2{
+
+			margin:0;
+			padding:0;
+			height: 400px;
+		}
+		.last{
+			padding-bottom: 5%;
+		}
+		.section{
+			height:400px;
+			width:100%;
+			position:relative;
+			background-repeat: no-repeat;
+		}
+		h3 {
+			font-size: 15px;
+
+		}
+		p {
+			
+			font: times;		
+		}
+		h1 {
+            padding-top: 6%;
+			font: bold;
+			font-size: 50px;
+		}
+		h2 { 
+			position: absolute; 
+			top: 200px; 
+			left: 0; 
+			width: 100%; 
+		}
+		h2 span { 
+			color: white; 
+			font: bold 50px/75px Helvetica, Sans-Serif; 
+			letter-spacing: -1px;  
+			background: rgb(0, 0, 0); /* fallback color */
+			background: rgba(0, 0, 0, 0.7);
+			padding: 10px; 
+		}
+	</style>
+	<script>
+		jQuery(document).ready(function($) {
+
+    // Fixa navbar ao ultrapassa-lo
+    var navbar = $('#navbar-main'),
+    distance = navbar.offset().top,
+    $window = $(window);
+
+    $window.scroll(function() {
+    	if ($window.scrollTop() >= distance) {
+    		navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+    		$("body").css("padding-top", "70px");
+    	} else {
+    		navbar.removeClass('navbar-fixed-top');
+    		$("body").css("padding-top", "0px");
+    	}
+    });
+});
+</script>
+
+</head>
+<body>
+
+	<div style="background-image: url(images/bridge.png);" class = "section" > <h2><span>TJHSST	 <br>Mobile Apps Club</span></h2></div>
+	<nav id="navbar-main" class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#intro">Intro</a></li>
+					<li><a href="#links">Links</a></li>
+					<li><a href="#officers">Officers</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	<div id = "intro" class = "normal2">
+		<img class = "element" src = "images/swift.png" />
+		<img class = "element2" src = "images/android.jpg" />
+		<center>
+		<h1>
+		Learn Mobile Development <br>
+		Wednesday A Block <br>
+		Swift & Android Studio
+
+		</h1>
+		</center>
+	</div>
+	<div id = "links" class = "normal">
+		<p>
+			<a href = "http://developer.android.com/sdk/index.html">Android Studio</a> : <h3>Android Studio is the official IDE for Android app development, based on IntelliJ IDEA. On top of IntelliJ's powerful code editor and developer tools, Android Studio offers even more features that enhance your productivity when building Android apps, such as:
+
+			-A flexible Gradle-based build system <br>
+			-Build variants and multiple APK file generation <br>
+			-Code templates to help you build common app features <br>
+			-A rich layout editor with support for drag and drop theme editing <br>
+			-Lint tools to catch performance, usability, version compatibility, and other problems <br>
+			-Code shrinking with ProGuard and resource shrinking with Gradle <br>
+			-Built-in support for Google Cloud Platform, making it easy to integrate Google Cloud Messaging  and App Engine<br> </h3>
+			<a href = "https://www.virtualbox.org/wiki/Downloads">Virtual Box</a> : <h3>Oracle VM VirtualBox (formerly Sun VirtualBox, Sun xVM VirtualBox and Innotek VirtualBox) is a hypervisor for x86 computers from Oracle Corporation. Innotek GmbH first developed the product before a Sun Microsystems acquisition in 2008. Oracle has continued development since 2010.
+			</h3>
+			<a href = "https://swift.org/download/">Swift</a> : <h3>Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns. 
+<br><br>
+The goal of the Swift project is to create the best available language for uses ranging from systems programming, to mobile and desktop apps, scaling up to cloud services. Most importantly, Swift is designed to make writing and maintaining correct programs easier for the developer. To achieve this goal, we believe that the most obvious way to write Swift code must also be: 
+<br><br>
+-Safe. The most obvious way to write code should also behave in a safe manner. Undefined behavior is the enemy of safety, and developer mistakes should be caught before software is in production. Opting for safety sometimes means Swift will feel strict, but we believe that clarity saves time in the long run.
+<br><br>
+-Fast. Swift is intended as a replacement for C-based languages (C, C++, and Objective-C). As such, Swift must be comparable to those languages in performance for most tasks. Performance must also be predictable and consistent, not just fast in short bursts that require clean-up later. There are lots of languages with novel features — being fast is rare.
+<br><br>
+-Expressive. Swift benefits from decades of advancement in computer science to offer syntax that is a joy to use, with modern features developers expect. But Swift is never done. We will monitor language advancements and embrace what works, continually evolving to make Swift even better.
+<br><br>
+-Tools are a critical part of the Swift ecosystem. We strive to integrate well within a developer’s toolset, to build quickly, to present excellent diagnostics, and to enable interactive development experiences. Tools can make programming so much more powerful, like Swift-based playgrounds do in Xcode, or a web-based REPL can when working with Linux server-side code.
+			</h3>
+		</div>
+		<div  class = "last" id = "officers">
+			<center>
+				<img src = "images/spencer.jpg" class = "about"/> 
+				<p> Spencer Atkin <br> Founder and iOS expert </p> <br>
+				<img src = "images/Rounak.jpg" class = "about"/> 
+				<p> Rounak Das <br> Co-Founder and Android expert </p> <br>
+			</center>
+		</div>	
+				<div class = "navbar navbar-default navbar-fixed-bottom">
+					<div class = "container">
+					
+					<p class = "navbar-text"><a href = "mailto:spenceratkin@gmail.com">Contact us</a></p>
+				</div>
+			</div>
+
+	</body>
+	</html>
+
